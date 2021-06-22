@@ -1,0 +1,608 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  cursor: pointer;
+}
+
+/* header */
+header {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  box-shadow: 0 3px 5px 0 rgba(218, 21, 21, 0.945);
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 65px;
+  background-color: rgb(255, 255, 255);
+}
+header ul {
+  list-style: none;
+  display: flex;
+}
+header li {
+  padding: 10px;
+  margin-left: 20px;
+}
+header li:nth-last-child(1) {
+  border-radius: 200px;
+  background-color: aquamarine;
+}
+
+/* main */
+main {
+  padding-top: 65px; /*headerの高さ*/
+}
+
+/* topview */
+.topview {
+  height: 460px;
+  background: url("test.jpg");
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+.topview-message {
+  position: absolute;
+  top: 100px;
+  left: 80px;
+}
+.topview-counseling {
+  position: absolute;
+  bottom: 100px;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+.topview-counseling a {
+  padding: 20px;
+  border-radius: 200px;
+  border: 3px solid white;
+  box-shadow: 0px 0px 5px 3px red;
+}
+
+/* notice */
+.notice {
+  padding: 30px 0;
+}
+.notice-message {
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid rgb(0, 255, 200);
+  border-radius: 10px;
+  padding: 30px;
+  overflow-wrap: break-word;
+}
+.notice-message p {
+  padding: 5px;
+}
+.notice-title {
+  position: absolute;
+  top: 0;
+  transform: translate(0, -50%);
+  background-color: darksalmon;
+  color: white;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+/* introduction */
+.introduction-sentence {
+  background-color: aquamarine;
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+.introduction-sentence .primary {
+  width: 50%;
+}
+.introduction-sentence .sub {
+  width: 50%;
+}
+.introduction-figure {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.introduction-figure .card {
+  width: 300px;
+  height: 450px;
+  margin: 30px;
+  position: relative;
+}
+.introduction-figure .card-number {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  top: -20px;
+  left: -20px;
+  padding: 9px;
+  border-radius: 100px;
+  background-color: coral;
+  color: white;
+}
+.introduction-figure .card-image {
+  height: 130px;
+  border: double 5px rgb(31, 189, 155);
+  background: url("test.jpg");
+  background-size: cover;
+}
+.introduction-figure .card-title {
+  text-align: center;
+  padding: 10px;
+}
+.introduction-figure .card-message p {
+  padding-bottom: 15px;
+}
+
+/* skill */
+.skill-title {
+  padding: 20px 80px 20px 35px;
+  margin-top: 20px;
+  display: inline-block;
+  font-size: 16px;
+  position: relative;
+  color: #fff;
+  z-index: 1;
+}
+.skill-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #01579b;
+  transform: perspective(0.6em) rotateX(-0.7deg);
+  transform-origin: bottom left;
+}
+.skill-table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: 10px auto;
+}
+.skill-table tr:nth-child(1) th,
+.skill-table tr:nth-child(1) td {
+  border: none;
+}
+.skill-table th {
+  width: 9%;
+  padding: 10px 0;
+  border-top: solid 1px rgb(41, 179, 110);
+  color: coral;
+}
+.skill-table td {
+  width: 18%;
+  padding: 10px 0;
+  border-top: solid 1px rgb(41, 179, 110);
+}
+.skill-table .skill-table-message {
+  width: 63%;
+}
+.skill-detail {
+  background-color: rgb(187, 238, 221);
+  padding: 50px;
+}
+.skill-detail-title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+.skill-detail-title::after {
+  content: "";
+  display: inline-block;
+  border-top: solid 1px black;
+  height: 1px;
+  width: 70px;
+}
+.skill-detail-card {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 20px;
+}
+.skill-detail-card-number {
+  position: absolute;
+  top: -60px;
+  left: -50px;
+  font-size: 70px;
+  color: rgba(77, 156, 130, 0.493);
+}
+.skill-detail-card:nth-child(3) .skill-detail-card-number {
+  right: -50px;
+  left: auto;
+}
+.skill-detail-card-img {
+  width: 25%;
+}
+.skill-detail-card-img img {
+  background-size: cover;
+  width: 100%;
+}
+.skill-detail-card-message {
+  width: 68%;
+}
+.skill-detail-card-message .main {
+  color: rgb(62, 150, 120);
+  margin-bottom: 12px;
+}
+
+/* curriculum */
+.curriculum {
+  margin-top: 60px;
+}
+.curriculum-title {
+  padding: 20px 80px 20px 35px;
+  display: inline-block;
+  font-size: 16px;
+  position: relative;
+  color: #fff;
+  z-index: 1;
+}
+.curriculum-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #01579b;
+  transform: perspective(0.6em) rotateX(-0.7deg);
+  transform-origin: bottom left;
+}
+.curriculum-main {
+  width: 90%;
+  height: 600px;
+  background-color: rgb(194, 240, 240);
+  margin: 30px auto 0;
+}
+.curriculum .plus {
+  color: aquamarine;
+  font-size: 40px;
+  text-align: center;
+}
+.support-basic {
+  width: 60%;
+  height: 150px;
+  margin: 0 auto;
+  transform: translateX(-70px);
+  background-color: rgb(194, 240, 240);
+  display: flex;
+}
+.support-basic-left {
+  display: table-cell;
+  vertical-align: middle;
+  height: 120px;
+  background-color: aliceblue;
+  box-shadow: 0 0 5px 3px red;
+  vertical-align: middle;
+}
+.support-basic-left .left-button {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  background-color: coral;
+}
+.support-basic-left .left-message {
+  display: inline-block;
+}
+.support-advanced {
+  display: flex;
+  width: 90%;
+  margin: 20px auto;
+}
+.advanced-card {
+  position: relative;
+  width: 50%;
+  padding: 40px;
+  border: 1px solid rgb(231, 131, 17);
+}
+.advanced-card-title {
+  width: 70%;
+  background-color: rgb(231, 131, 17);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 12px;
+}
+
+/* feature */
+.feature-main {
+  background-color: aquamarine;
+  padding: 14px;
+}
+.feature-main-title {
+  margin: 0 auto;
+  width: 300px;
+  padding: 9px 12px;
+  background-color: aliceblue;
+  color: rgb(69, 143, 207);
+  text-align: center;
+  border-radius: 100px;
+}
+.feature-main-cards {
+  display: flex;
+  margin-top: 10px;
+}
+.feature-main-card:nth-child(n + 2) {
+  margin-left: 9px;
+}
+.feature-card-message {
+  background-color: aliceblue;
+  padding: 9px;
+}
+.feature-sub-graphs {
+  padding: 15px;
+  display: flex;
+}
+.feature-sub-graph {
+  width: 33%;
+  text-align: center;
+}
+
+/* graduate */
+.graduate {
+  padding: 20px;
+}
+.graduate-title {
+  text-align: center;
+}
+.graduate-title::after {
+  content: "";
+  display: inline-block;
+  border-top: solid 1px black;
+  height: 1px;
+  width: 50px;
+}
+.graduate-cards {
+  display: flex;
+  margin-top: 8px;
+}
+.graduate-card {
+  width: 33%;
+  border: 1px solid rgb(57, 189, 138);
+  padding: 5px;
+}
+.graduate-card:nth-child(n + 2) {
+  margin-left: 9px;
+}
+.graduate-card-img {
+  height: 120px;
+  background: url("test.jpg");
+  background-size: cover;
+}
+.graduate-link {
+  width: 180px;
+  text-align: center;
+  position: relative;
+  margin: 20px auto;
+  padding: 5px;
+  background-color: rgb(194, 233, 220);
+  color: rgb(81, 197, 158);
+  border: 1px solid rgb(81, 197, 158);
+  border-radius: 100px;
+}
+.graduate-arrow {
+  position: absolute;
+  top: 50%;
+  right: 9px;
+  transform: translateY(-50%);
+}
+
+/* charge */
+.charge-main {
+  background-color: aquamarine;
+  padding: 15px;
+  height: 300px;
+}
+.charge-guarantee {
+  height: 300px;
+  padding: 20px;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+.charge-guarantee-circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  background-color: darkorange;
+  border-radius: 100px;
+}
+.charge-guarantee-circle p {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.charge-guarantee-message {
+  width: 70%;
+  left: 180px;
+}
+.charge-guarantee::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 150px solid #f0897f;
+  border-right: 50px solid transparent;
+}
+.charge-guarantee::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: 150px solid #f0897f;
+  border-left: 50px solid transparent;
+}
+.charge-reason {
+  height: 300px;
+  position: relative;
+  background-color: antiquewhite;
+  text-align: end;
+}
+.charge-reason::after {
+  content: "";
+  position: absolute;
+  width: 65%;
+  transform: translateX(-100%);
+  border-bottom: 300px solid #b2ce54;
+  border-left: 100px solid transparent;
+}
+
+/* message */
+.message {
+  margin: 40px 0;
+}
+.message .message-title {
+  text-align: center;
+}
+.message .message-title::after {
+  content: "";
+  display: inline-block;
+  border-top: solid 1px black;
+  height: 1px;
+  width: 50px;
+  margin-bottom: 10px;
+}
+.message .message-box {
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 0 0 4px 2px red;
+  padding: 15px;
+}
+.message .message-box-contents {
+  display: flex;
+  align-items: center;
+}
+.message .message-box-contents-text {
+  width: 80%;
+}
+.message .message-box-contents-img {
+  width: 20%;
+  margin-left: 20px;
+  background: url("test.jpg");
+  background-size: cover;
+  height: 100px;
+}
+.message-charge-link {
+  width: 180px;
+  text-align: center;
+  position: relative;
+  margin: 20px auto;
+  padding: 5px;
+  background-color: rgb(194, 233, 220);
+  color: rgb(81, 197, 158);
+  border: 1px solid rgb(81, 197, 158);
+  border-radius: 100px;
+}
+.message-charge-arrow {
+  position: absolute;
+  top: 50%;
+  right: 9px;
+  transform: translateY(-50%);
+}
+
+/* application */
+.application {
+  height: 200px;
+  background: url("test.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.application .application-link {
+  padding: 7px 10px;
+  margin-top: 10px;
+  background-color: aliceblue;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.603);
+  border-radius: 100px;
+}
+
+/* question */
+.question-box {
+  width: 80%;
+  margin: 30px auto;
+}
+.question-box-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.question-box-question {
+  margin-bottom: 20px;
+}
+.question-box-question-title {
+  background-color: rgb(167, 245, 219);
+  padding: 10px;
+}
+.question-box-question-answer {
+  padding: 10px;
+}
+.question-link {
+  width: 180px;
+  text-align: center;
+  position: relative;
+  margin: 20px auto;
+  padding: 5px;
+  background-color: rgb(194, 233, 220);
+  color: rgb(81, 197, 158);
+  border: 1px solid rgb(81, 197, 158);
+  border-radius: 100px;
+}
+.question-arrow {
+  position: absolute;
+  top: 50%;
+  right: 9px;
+  transform: translateY(-50%);
+}
+
+/* media */
+.media {
+  margin: 80px 0;
+}
+.media-box {
+  width: 85%;
+  height: 200px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+/* footer */
+footer {
+  background-color: darkgray;
+  padding: 30px;
+}
+.footer-box {
+  width: 400px;
+  display: flex;
+  margin: 0 auto 20px;
+}
+footer ul {
+  list-style: none;
+}
+.footer-box-left {
+  width: 50%;
+  padding: 5px 8px;
+  border-right: 1px solid rgb(104, 97, 97);
+  border-left: 1px solid rgb(104, 97, 97);
+}
+.footer-box-right {
+  padding: 5px 8px;
+  border-right: 1px solid rgb(104, 97, 97);
+  width: 50%;
+}
+footer .copyright {
+  text-align: center;
+}
