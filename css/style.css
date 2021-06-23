@@ -40,7 +40,7 @@ main {
 /* topview */
 .topview {
   height: 460px;
-  background: url("test.jpg");
+  background: url("../test.jpg");
   background-size: cover;
   position: relative;
   z-index: 0;
@@ -132,7 +132,7 @@ main {
 .introduction-figure .card-image {
   height: 130px;
   border: double 5px rgb(31, 189, 155);
-  background: url("test.jpg");
+  background: url("../test.jpg");
   background-size: cover;
 }
 .introduction-figure .card-title {
@@ -380,7 +380,7 @@ main {
 }
 .graduate-card-img {
   height: 120px;
-  background: url("test.jpg");
+  background: url("../test.jpg");
   background-size: cover;
 }
 .graduate-link {
@@ -495,7 +495,7 @@ main {
 .message .message-box-contents-img {
   width: 20%;
   margin-left: 20px;
-  background: url("test.jpg");
+  background: url("../test.jpg");
   background-size: cover;
   height: 100px;
 }
@@ -520,7 +520,7 @@ main {
 /* application */
 .application {
   height: 200px;
-  background: url("test.jpg");
+  background: url("../test.jpg");
   display: flex;
   align-items: center;
   justify-content: center;
