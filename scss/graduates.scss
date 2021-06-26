@@ -8,28 +8,38 @@ a {
 }
 
 /* header */
-header {
+.header {
   display: flex;
-  padding: 10px;
+  align-items: center;
+  padding: 12px 18px;
   justify-content: space-between;
-  box-shadow: 0 3px 5px 0 rgba(218, 21, 21, 0.945);
+  box-shadow: 0 3px 5px 0 rgba(80, 78, 78, 0.945);
   z-index: 1;
   position: fixed;
   width: 100%;
-  height: 65px;
+  height: 86px;
   background-color: rgb(255, 255, 255);
-}
-header ul {
-  list-style: none;
-  display: flex;
-}
-header li {
-  padding: 10px;
-  margin-left: 20px;
-}
-header li:nth-last-child(1) {
-  border-radius: 200px;
-  background-color: aquamarine;
+  z-index: 15;
+  &__nav {
+    font-size: 20px;
+    width: 70%;
+    color: #8d8d8d;
+    & ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    & a {
+      margin-left: 35px;
+    }
+    & a:nth-last-child(1) {
+      padding: 10px;
+      border-radius: 200px;
+      color: white;
+      background: linear-gradient(90deg, #5dbdac, #75c17f);
+    }
+  }
 }
 
 /* main */
@@ -38,34 +48,35 @@ main {
 }
 
 .graduates-topview {
-  background: url("../test.jpg");
+  background: url("../img/graduates/main-graduate-pc.png");
   background-size: cover;
-  height: 180px;
+  background-position: bottom;
+  height: 314px;
   position: relative;
-
   &__message {
     position: absolute;
     top: 50%;
     left: 100px;
     transform: translateY(-50%);
     color: white;
-
     &--sub {
-      font-size: 20px;
+      font-size: 32px;
+      text-shadow: 0 0 12px rgb(10, 10, 10);
     }
-
     &--main {
-      font-size: 30px;
+      font-size: 47px;
+      text-shadow: 0 0 12px rgb(10, 10, 10);
     }
   }
 }
 
 .voice {
-  background-color: aqua;
-  padding: 40px 0;
+  background-color: #e9f6f6;
+  padding: 80px 0;
 }
 .voice-box {
-  width: 600px;
+  max-width: 1300px;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -77,69 +88,97 @@ main {
 }
 .card {
   padding: 10px;
-  box-shadow: 0 0 2px 2px black;
-  background-color: aliceblue;
+  margin-bottom: 30px;
+  box-shadow: 0 0 3px 2px #55bbbb;
+  background-color: white;
   &__img {
-    background: url("../test.jpg");
-    background-size: cover;
     height: 100px;
+    padding-top: 60%;
+    &.img1 {
+      background: url("../img/graduates/interview_img-1.png");
+      background-size: cover;
+      background-position: center;
+    }
+    &.img2 {
+      background: url("../img/graduates/interview_img-2.png");
+      background-size: cover;
+      background-position: center;
+    }
+    &.img3 {
+      background: url("../img/graduates/interview_img-3.png");
+      background-size: cover;
+      background-position: center;
+    }
   }
   &__message {
     padding-top: 9px;
-    font-size: 10px;
+    color: #6b6a6a;
+    font-size: 16px;
   }
 }
 
 .application {
-  height: 200px;
-  background: url("../test.jpg");
+  height: 372px;
+  background: url("../img/CTA.png");
+  background-position: bottom;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
-
 .application-box {
-  &__message {
+  max-width: 952px;
+  width: 90%;
+  text-align: center;
+  &__title {
+    font-size: 34px;
     color: white;
-    font-size: 23px;
-    padding: 12px 0;
+    padding-bottom: 20px;
   }
   &__link {
-    width: 300px;
+    max-width: 551px;
+    background-color: white;
     margin: 0 auto;
-    padding: 7px 0px;
-    display: block;
-    margin-top: 10px;
-    background-color: aliceblue;
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.603);
     border-radius: 100px;
+    width: 90%;
+    font-size: 26px;
+    color: #5d5d5d;
+    padding: 13px 0;
   }
 }
 
 .footer {
-  background-color: darkgray;
-  padding: 30px;
+  background-color: #ecefef;
+  padding: 40px 0 20px;
+  color: #6a6a6a;
   &__copyright {
     text-align: center;
   }
 }
 .footer-box {
-  width: 420px;
+  max-width: 600px;
+  width: 90%;
   display: flex;
   margin: 0 auto 20px;
+  font-size: 20px;
+  & a {
+    line-height: 40px;
+  }
   & ul {
     list-style: none;
   }
   &__left {
     width: 50%;
     padding: 5px 8px;
-    border-right: 1px solid rgb(104, 97, 97);
-    border-left: 1px solid rgb(104, 97, 97);
+    border-right: 1px solid #9a9a9a;
+    border-left: 1px solid #9a9a9a;
   }
   &__right {
-    padding: 5px 8px;
-    border-right: 1px solid rgb(104, 97, 97);
     width: 50%;
+    padding: 5px 8px;
+    border-right: 1px solid #9a9a9a;
+  }
+  &__copyright {
+    font-size: 18px;
   }
 }

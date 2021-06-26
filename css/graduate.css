@@ -198,7 +198,7 @@ main {
 
 .subtheme-box__number {
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 0;
   width: 48px;
   height: 48px;
@@ -208,8 +208,8 @@ main {
   line-height: 48px;
   text-align: center;
   border-radius: 100px;
-  -webkit-transform: translate(-50%, -70%);
-          transform: translate(-50%, -70%);
+  -webkit-transform: translate(-50%, -30%);
+          transform: translate(-50%, -30%);
 }
 
 .subtheme-box__text {
