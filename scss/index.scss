@@ -879,3 +879,39 @@ main {
     }
   }
 }
+
+.graduates {
+  padding: 50px 0 30px;
+  &__title {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+}
+
+.voice-box {
+  max-width: 1300px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  &__card {
+    width: 31%;
+    margin: 5px;
+  }
+}
+.card {
+  padding: 10px;
+  box-shadow: 0 0 2px 2px black;
+  background-color: aliceblue;
+  border: 2px solid #55bbbb;
+  &__img {
+    background: url("../test.jpg");
+    background-size: cover;
+    height: 100px;
+  }
+  &__message {
+    padding-top: 9px;
+    font-size: 10px;
+  }
+}
