@@ -6,18 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/thanks.css" />
+    <link rel="stylesheet" href="css/common.css" />
   </head>
   <body>
     <header class="header">
-      <div class="header__logo">COACHTECH</div>
+      <div class="header__logo"><a>COACHTECH</a></div>
       <nav class="header__nav">
         <ul>
-          <li><a>卒業生の声</a></li>
-          <li><a>よくある質問</a></li>
-          <li><a>コース・料金</a></li>
-          <li><a>無料カウンセリングはこちら</a></li>
+          <a><li>卒業生の声</li></a>
+          <a><li>よくある質問</li></a>
+          <a><li>コース・料金</li></a>
+          <a><li>無料カウンセリングはこちら</li></a>
         </ul>
       </nav>
+      <div id="menu">
+        <span id="menu__top"></span>
+        <span id="menu__middle"></span>
+        <span id="menu__bottom"></span>
+      </div>
+      <div id="drawer-nav">
+        <div id="drawer-nav__box">
+          <div class="drawer-nav__list"><a>卒業生の声</a></div>
+          <div class="drawer-nav__list"><a>よくある質問</a></div>
+          <div class="drawer-nav__list"><a>コース・料金</a></div>
+          <a><div class="drawer-nav__list">無料カウンセリングはこちら</div></a>
+        </div>
+      </div>
     </header>
     <main>
       <div class="counseling-topview">
@@ -35,11 +49,11 @@
           </div>
           <div class="statistics__card">
             <div class="statistics__card--big">98％</div>
-            <div class="statistics__card--small">カウンセリング満足度</div>
+            <div class="statistics__card--small">悩み解決を実感</div>
           </div>
           <div class="statistics__card">
-            <div class="statistics__card--big">98％</div>
-            <div class="statistics__card--small">カウンセリング満足度</div>
+            <div class="statistics__card--big">500名</div>
+            <div class="statistics__card--small">累計利用者数</div>
           </div>
         </div>
       </div>
@@ -47,12 +61,12 @@
         <div class="step-box">
           <div class="step-box__title">STEP03</div>
           <div class="step-box__text">
-            <p>aaaaaaaaaaaaaaa</p>
+            <p>LINEの友達追加後に予約が完了いたします。</p>
             <p>
-              aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br />aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+              無料カウンセリングを実施するにあたり、LINE公式アカウントにて今後のご連絡をさせていただいております。<br />下記ボタンまたはメールにて送信されたURLより公式LINEの友達追加をお願いいたします。
             </p>
           </div>
-          <div class="step-box__line">友達追加</div>
+          <div class="step-box__line">友だち追加</div>
         </div>
         <div class="step__caution">
           ※LINEの友達追加を行なっていない場合、無料カウンセリングは実施できません。
@@ -137,5 +151,6 @@
         Copyright 2021 coachtech.site All rights reserved
       </div>
     </footer>
+    <script src="header.js"></script>
   </body>
 </html>

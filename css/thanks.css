@@ -1,74 +1,25 @@
-@charset "UTF-8";
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-a {
-  cursor: pointer;
-}
-
-/* header */
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 10px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-shadow: 0 3px 5px 0 rgba(218, 21, 21, 0.945);
-          box-shadow: 0 3px 5px 0 rgba(218, 21, 21, 0.945);
-  z-index: 1;
-  position: fixed;
-  width: 100%;
-  height: 65px;
-  background-color: white;
-}
-
-header ul {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-header li {
-  padding: 10px;
-  margin-left: 20px;
-}
-
-header li:nth-last-child(1) {
-  border-radius: 200px;
-  background-color: aquamarine;
-}
-
-/* main */
-main {
-  padding-top: 65px;
-  /*headerの高さ*/
-}
-
 .counseling-topview {
-  padding: 40px 30px;
-  background: url("../test.jpg");
+  padding: 90px 30px 0;
+  height: 414px;
+  background: url("../img/thanks/main-thanks-pc.png");
+  background-position: right;
   color: white;
 }
 
 .counseling-topview__subtitle {
-  font-size: 12px;
+  font-size: 18px;
   margin-bottom: 9px;
+  text-shadow: 0 0 15px black;
 }
 
 .counseling-topview__title {
-  font-size: 19px;
+  font-size: 32px;
   margin-bottom: 9px;
+  text-shadow: 0 0 15px black;
 }
 
 .counseling-topview__caution {
-  font-size: 7px;
+  font-size: 13px;
   margin-bottom: 9px;
 }
 
@@ -76,55 +27,64 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: black;
+  margin-top: 30px;
+  color: #5b5b5b;
 }
 
 .statistics__card {
   background-color: white;
+  border-radius: 4px;
   text-align: center;
-  width: 170px;
+  width: 221px;
   margin-right: 9px;
   padding: 6px;
 }
 
 .statistics__card--big {
-  font-size: 30px;
+  font-size: 47px;
 }
 
 .statistics__card--small {
-  font-size: 11px;
+  font-size: 14px;
 }
 
 .step {
-  width: 700px;
-  margin: 20px auto;
+  max-width: 700px;
+  width: 90%;
+  margin: 40px auto 50px;
 }
 
 .step__caution {
-  color: red;
+  color: #d92f2f;
+  font-size: 17px;
 }
 
 .step-box {
   position: relative;
-  border: solid 1px aquamarine;
-  padding: 30px 15px 20px;
+  border: solid 2px #55bbbb;
+  border-radius: 3px;
+  padding: 50px 15px 30px;
 }
 
 .step-box__title {
   position: absolute;
+  width: 132px;
   top: 0;
   left: 20px;
-  font-size: 12px;
+  font-size: 22px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-color: aquamarine;
+  background-color: #55bbbb;
+  border-radius: 5px;
   color: white;
   text-align: center;
-  padding: 2px 9px;
+  padding: 2px 0;
 }
 
 .step-box__text {
   line-height: 20px;
+  font-size: 18px;
+  color: #707070;
 }
 
 .step-box__text p {
@@ -132,29 +92,38 @@ main {
 }
 
 .step-box__line {
-  width: 400px;
-  margin: 0 auto;
+  width: 45%;
+  max-width: 450px;
+  margin: 12px auto 0;
   text-align: center;
-  background-color: chartreuse;
+  background-color: #06c755;
+  padding: 8px 0;
+  border-radius: 8px;
+  color: white;
+  font-size: 21px;
 }
 
 .confirm {
-  background-color: aquamarine;
-  padding: 30px 0 30px;
+  background-color: #e9f6f6;
+  padding: 40px 0 50px;
 }
 
 .confirm-box {
-  width: 600px;
+  max-width: 600px;
+  width: 90%;
   margin: 0 auto;
 }
 
 .confirm-box__title {
-  background-color: #235847;
+  background-color: #55bbbb;
+  border-radius: 3px;
   color: white;
-  width: 150px;
+  font-size: 22px;
+  width: 200px;
   text-align: center;
   margin-bottom: 20px;
   padding: 4px 0;
+  font-size: 19px;
 }
 
 .confirm-box__list {
@@ -169,17 +138,18 @@ main {
 }
 
 .confirm-box__list--data {
-  color: #4e4c4c;
+  color: #707070;
 }
 
 .counseling-flow {
-  width: 700px;
-  margin: 30px auto;
+  max-width: 960px;
+  width: 90%;
+  margin: 40px auto 30px;
 }
 
 .counseling-flow__title {
-  font-size: 18px;
-  margin-bottom: 30px;
+  font-size: 24px;
+  margin-bottom: 50px;
 }
 
 .counseling-flow__content {
@@ -192,31 +162,32 @@ main {
 }
 
 .counseling-flow__content--chain {
-  color: aquamarine;
+  color: #55bbbb;
   width: 2%;
   text-align: center;
 }
 
 .flow-box {
   position: relative;
-  padding: 30px 0 10px;
+  padding: 60px 0 20px;
+  border-radius: 4px;
   width: 32%;
-  border: 1px solid aquamarine;
+  border: 2px solid #55bbbb;
 }
 
 .flow-box__title {
   position: absolute;
   display: table;
   color: white;
-  font-size: 10px;
-  width: 40px;
-  height: 40px;
-  border-radius: 40px;
+  font-size: 16px;
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
   top: 0;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: aquamarine;
+  background-color: #55bbbb;
   text-align: center;
 }
 
@@ -226,11 +197,11 @@ main {
 }
 
 .flow-box__text {
-  color: #5c5e5f;
+  color: #707070;
   display: table;
   width: 100%;
   height: 60px;
-  font-size: 11px;
+  font-size: 17px;
   text-align: center;
 }
 
@@ -240,43 +211,45 @@ main {
 }
 
 .flow-box__img {
+  max-width: 200px;
+  width: 80%;
   background: url("../test.jpg");
-  margin: 0 10px;
-  height: 100px;
-  background-size: cover;
+  margin: 0 auto;
+  padding-top: 80%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.footer {
-  background-color: darkgray;
-  padding: 30px;
-}
-
-.footer__copyright {
-  text-align: center;
-}
-
-.footer-box {
-  width: 420px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto 20px;
-}
-
-.footer-box ul {
-  list-style: none;
-}
-
-.footer-box__left {
-  width: 50%;
-  padding: 5px 8px;
-  border-right: 1px solid #686161;
-  border-left: 1px solid #686161;
-}
-
-.footer-box__right {
-  padding: 5px 8px;
-  border-right: 1px solid #686161;
-  width: 50%;
+@media screen and (max-width: 680px) {
+  .statistics__card--big {
+    font-size: 26px;
+  }
+  .statistics__card--small {
+    font-size: 7px;
+  }
+  .confirm-box__list {
+    font-size: 16px;
+  }
+  .counseling-topview {
+    background: url("../img/thanks/main-thanks-res.png");
+    background-size: cover;
+    background-position: bottom;
+    padding: 70px 5px 0;
+  }
+  .counseling-flow__title {
+    text-align: center;
+  }
+  .counseling-flow__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .counseling-flow__content--chain {
+    display: none;
+  }
+  .flow-box {
+    width: 90%;
+    margin: 40px auto;
+  }
 }
 /*# sourceMappingURL=thanks.css.map */

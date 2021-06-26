@@ -6,18 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/question.css" />
+    <link rel="stylesheet" href="css/common.css" />
   </head>
   <body>
     <header class="header">
-      <div class="header__logo">COACHTECH</div>
+      <div class="header__logo"><a>COACHTECH</a></div>
       <nav class="header__nav">
         <ul>
-          <li><a>卒業生の声</a></li>
-          <li><a>よくある質問</a></li>
-          <li><a>コース・料金</a></li>
-          <li><a>無料カウンセリングはこちら</a></li>
+          <a><li>卒業生の声</li></a>
+          <a><li>よくある質問</li></a>
+          <a><li>コース・料金</li></a>
+          <a><li>無料カウンセリングはこちら</li></a>
         </ul>
       </nav>
+      <div id="menu">
+        <span id="menu__top"></span>
+        <span id="menu__middle"></span>
+        <span id="menu__bottom"></span>
+      </div>
+      <div id="drawer-nav">
+        <div id="drawer-nav__box">
+          <div class="drawer-nav__list"><a>卒業生の声</a></div>
+          <div class="drawer-nav__list"><a>よくある質問</a></div>
+          <div class="drawer-nav__list"><a>コース・料金</a></div>
+          <a><div class="drawer-nav__list">無料カウンセリングはこちら</div></a>
+        </div>
+      </div>
     </header>
     <main>
       <div class="question-topview">
@@ -120,12 +134,8 @@
       </div>
       <div class="application">
         <div class="application-box">
-          <p class="application-box__message">
-            「あなたに最適な学習方法」がわかる無料カウンセリングへ！
-          </p>
-          <a class="application-box__link"
-            >まずは無料カウンセリングに申し込む</a
-          >
+          <p class="application-box__title">「あなたに最適な学習方法」がわかる無料カウンセリングへ！</p>
+          <a><p class="application-box__link">まずは無料カウンセリングに申し込む</ｐ></a>
         </div>
       </div>
     </main>
@@ -151,5 +161,6 @@
       </div>
     </footer>
     <script src="question.js"></script>
+    <script src="header.js"></script>
   </body>
 </html>

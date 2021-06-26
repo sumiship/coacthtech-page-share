@@ -1,90 +1,49 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-a {
-  cursor: pointer;
-}
-input,
-textarea {
-  width: 100%;
-}
-th,
-td {
-  text-align: start;
-  vertical-align: top;
-}
-
-/* header */
-header {
-  display: flex;
-  padding: 10px;
-  justify-content: space-between;
-  box-shadow: 0 3px 5px 0 rgba(218, 21, 21, 0.945);
-  z-index: 1;
-  position: fixed;
-  width: 100%;
-  height: 65px;
-  background-color: rgb(255, 255, 255);
-}
-header ul {
-  list-style: none;
-  display: flex;
-}
-header li {
-  padding: 10px;
-  margin-left: 20px;
-}
-header li:nth-last-child(1) {
-  border-radius: 200px;
-  background-color: aquamarine;
-}
-
-/* main */
-main {
-  padding-top: 65px; /*headerの高さ*/
-}
-
 .counseling-topview {
-  padding: 40px 30px;
-  background: url("../test.jpg");
+  padding: 90px 30px 0;
+  height: 414px;
+  background: url("../img/thanks/main-thanks-pc.png");
+  background-position: right;
   color: white;
   &__subtitle {
-    font-size: 12px;
+    font-size: 18px;
     margin-bottom: 9px;
+    text-shadow: 0 0 15px black;
   }
   &__title {
-    font-size: 19px;
+    font-size: 32px;
     margin-bottom: 9px;
+    text-shadow: 0 0 15px black;
   }
   &__caution {
-    font-size: 7px;
+    font-size: 13px;
     margin-bottom: 9px;
   }
 }
 
 .statistics {
   display: flex;
-  color: black;
+  margin-top: 30px;
+  color: #5b5b5b;
   &__card {
     background-color: white;
+    border-radius: 4px;
     text-align: center;
-    width: 170px;
+    width: 221px;
     margin-right: 9px;
     padding: 6px;
     &--big {
-      font-size: 30px;
+      font-size: 47px;
     }
     &--small {
-      font-size: 11px;
+      font-size: 14px;
     }
   }
 }
 
 .step {
-  width: 600px;
-  margin: 30px auto;
+  max-width: 928px;
+  width: 90%;
+  margin: 60px auto 40px;
 }
 
 .step-list {
@@ -92,41 +51,52 @@ main {
   margin: 5px 0;
   justify-content: space-between;
   text-align: center;
+  color: #707070;
+  font-size: 20px;
   &__number {
     &--off {
-      border: 1px solid aquamarine;
-      width: 90px;
+      border: 3px solid #55bbbb;
+      border-radius: 3px;
+      width: 120px;
       margin-right: 20px;
+      padding: 15px 0;
     }
     &--fill {
-      background-color: aquamarine;
+      background-color: #55bbbb;
+      border-radius: 3px;
       color: white;
-      width: 90px;
+      width: 120px;
       margin-right: 20px;
+      padding: 15px 0;
     }
   }
   &__text {
     &--off {
-      border: 1px solid aquamarine;
+      border: 3px solid #55bbbb;
+      border-radius: 3px;
       width: calc(100% - 220px);
+      padding: 15px 0;
     }
     &--fill {
-      background-color: aquamarine;
+      background-color: #55bbbb;
       width: calc(100% - 110px);
+      border-radius: 3px;
       color: white;
+      padding: 15px 0;
     }
   }
   &__button {
     &--off {
-      border: 1px solid aquamarine;
+      border: 3px solid #55bbbb;
       width: 90px;
       margin-left: 20px;
+      padding: 15px 0;
     }
   }
 }
 
 .form {
-  background-color: aqua;
+  background-color: #e9f6f6;
   padding: 20px 0;
   & table {
     margin: 0px auto;
@@ -141,6 +111,14 @@ main {
     width: 40px;
     text-align: center;
     color: white;
+    background-color: #fe7f7f;
+    border-radius: 3px;
+    &--false {
+      background-color: white;
+      border: 1px solid #55bbbb;
+      color: #55bbbb;
+      border-radius: 3px;
+    }
   }
   &__input {
     &--half {
@@ -169,36 +147,28 @@ main {
   &__button {
     width: 340px;
     margin: 20px auto;
-    background-color: aquamarine;
+    background-color: #55bbbb;
     border-radius: 100px;
     text-align: center;
     color: white;
   }
 }
 
-.footer {
-  background-color: darkgray;
-  padding: 30px;
-  &__copyright {
-    text-align: center;
+@media screen and (max-width: 680px) {
+  .statistics {
+    &__card {
+      &--big {
+        font-size: 26px;
+      }
+      &--small {
+        font-size: 7px;
+      }
+    }
   }
-}
-.footer-box {
-  width: 420px;
-  display: flex;
-  margin: 0 auto 20px;
-  & ul {
-    list-style: none;
-  }
-  &__left {
-    width: 50%;
-    padding: 5px 8px;
-    border-right: 1px solid rgb(104, 97, 97);
-    border-left: 1px solid rgb(104, 97, 97);
-  }
-  &__right {
-    padding: 5px 8px;
-    border-right: 1px solid rgb(104, 97, 97);
-    width: 50%;
+  .counseling-topview {
+    background: url("../img/thanks/main-thanks-res.png");
+    background-size: cover;
+    background-position: bottom;
+    padding: 70px 5px 0;
   }
 }
