@@ -4,49 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <div class="logo">COACHTECH</div>
-      <nav>
+    <header class="header">
+      <div class="header__logo"><a>COACHTECH</a></div>
+      <nav class="header__nav">
         <ul>
-          <li><a>卒業生の声</a></li>
-          <li><a>よくある質問</a></li>
-          <li><a>コース・料金</a></li>
-          <li><a>無料カウンセリングはこちら</a></li>
+          <a><li>卒業生の声</li></a>
+          <a><li>よくある質問</li></a>
+          <a><li>コース・料金</li></a>
+          <a><li>無料カウンセリングはこちら</li></a>
         </ul>
       </nav>
     </header>
     <main>
       <div class="topview">
-        <div class="topview-message">
+        <div class="topview__message">
           <h1>未経験から<br />フリーランスエンジニアに</h1>
           <p>
             COACHTECHでは、オンラインプログラミングスクールの中でも<br />学習継続率が97%と圧倒的に高い実績を残しています。
           </p>
         </div>
-        <div class="topview-counseling">
+        <div class="topview__button">
           <a>無料カウンセリングはこちら</a>
         </div>
       </div>
       <div class="notice">
-        <div class="notice-message">
-          <div class="notice-title">お知らせ</div>
-          <h3>＜＜受講者数制限に関するご連絡＞＞</h3>
-          <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-          <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+        <div class="notice__title">お知らせ</div>
+        <div class="notice__text--main">
+          《 受講者数制限に関するご連絡 》
+        </div>
+        <div class="notice__text--sub">
+          <p>2021年4月13日よりサービス品質維持のため、誠に勝手ながら毎月の受講者数を35名までとさせていただいております。</p>
+          <p>生徒様一人一人に向き合い、皆様に満足いただけるサービスを作れるよう引き続き精進して参ります。</p>
         </div>
       </div>
       <div class="introduction">
         <div class="introduction-sentence">
-          <div class="primary">
+          <div class="introduction-sentence__back">Free Lance</div>
+          <div class="introduction-sentence__primary">
             <p>
               「フリーランス」に<br />なるための<br />プログラミングスクール
             </p>
           </div>
-          <div class="sub">
+          <div class="introduction-sentence__sub">
             <p>COACHTECHはフリーランス特化型のプログラミングスクールです。</p>
             <p>
               COACHTECHでは確かなプログラミングスキルと自己解決力、案件の実績を身につけられる学習プログラムを用意しております。
@@ -57,127 +60,152 @@
           </div>
         </div>
         <div class="introduction-figure">
-          <div class="card">
-            <div class="card-image">
-              <div class="card-number">01</div>
+          <div class="introduction-card">
+            <div class="introduction-card__image--1">
+              <div class="imagebox"></div>
             </div>
-            <div class="card-title">
+            <div class="introduction-card__number">01</div>
+            <div class="introduction-card__title">
               <p>短期習得を可能にした<br />オーダーメイド教材</p>
             </div>
-            <div class="card-message">
+            <div class="introduction-card__message">
               <p>
-                プログラミングを短期間で習得するには、生徒様の目標やスキルレベルにあっており、なおかつ実践的な技術を使用した教材が必要になります。
-              </p>
-              <p>
+                プログラミングを短期間で習得するには、生徒様の目標やスキルレベルにあっており、なおかつ実践的な技術を使用した教材が必要になります。<br><br>
                 COACHTECHでは、アウトプット中心の実践的な技術を取り入れているのはもちろん、生徒様一人ひとりにスキルレベル・目標・学習時間をヒアリングした後、最適なオーダーメイド教材を作成いたします。
               </p>
             </div>
           </div>
-          <div class="card">
-            <div class="card-image">
-              <div class="card-number">02</div>
+          <div class="introduction-card">
+            <div class="introduction-card__image--2">
+              <div class="imagebox"></div>
             </div>
-            <div class="card-title"></div>
-            <div class="card-message"></div>
+            <div class="introduction-card__number">02</div>
+            <div class="introduction-card__title">
+              <p>短時間でエラー解決できる<br />質問チャットサポート</p>
+            </div>
+            <div class="introduction-card__message">
+              <p>
+                プログラミング学習中のエラーや疑問点が長時間解決出来ないと学習のモチベーションが落ちてしまいます。<br>COACHTECHでは、モチベーションを高く保つためにも生徒様からの質問に対して30分以内の回答を心がけております。<br><br>
+                実際にコードレビューを除いた95%の質問に30分以内に回答しております。
+              </p>
+            </div>
           </div>
-          <div class="card">
-            <div class="card-image">
-              <div class="card-number">03</div>
+          <div class="introduction-card">
+            <div class="introduction-card__image--3">
+              <div class="imagebox"></div>
             </div>
-            <div class="card-title"></div>
-            <div class="card-message"></div>
+            <div class="introduction-card__number">03</div>
+            <div class="introduction-card__title">
+              <p>現役のエンジニアの専属コーチが<br />毎週フィードバック</p>
+            </div>
+            <div class="introduction-card__message">
+              <p>
+                現役で活躍しているエンジニアが専属コーチとなり1週間に1度週次で面談を行います。週次面談では、1週間の学習進捗や現状の課題をヒアリングした上で学習のフィードバックを行います。<br><br>
+                コーチは、あなたの学習に最後まで寄り添います。技術的な質問だけでなくキャリア、学習中の悩み等にもお答えし、あなたの不安を解消します。
+              </p>
+            </div>
           </div>
-          <div class="card">
-            <div class="card-image">
-              <div class="card-number">04</div>
+          <div class="introduction-card">
+            <div class="introduction-card__image--4">
+              <div class="imagebox"></div>
             </div>
-            <div class="card-title"></div>
-            <div class="card-message"></div>
+            <div class="introduction-card__number">04</div>
+            <div class="introduction-card__title">
+              <p>フリーランスまでの<br />キャリアを徹底サポート</p>
+            </div>
+            <div class="introduction-card__message">
+              <p>
+                COACHTECHでは、プログラミングを学習して終了ではありません。卒業後は、フリーランスエンジニアとして初めての案件を取れるよう徹底したキャリアサポートを行っています。<br><br>
+                フリーランスエンジニアになるための案件獲得サポート、ポートフォリオの添削、卒業後の行動計画の作成を行い初めての案件を取れるようサポートします。
+              </p>
+            </div>
           </div>
         </div>
       </div>
       <div class="application">
         <div class="application-box">
-          <p>「あなたに最適な学習方法」がわかる無料カウンセリングへ！</p>
-          <a><p class="application-link">まずは無料カウンセリングに申し込む</ｐ></a>
+          <p class="application-box__title">「あなたに最適な学習方法」がわかる無料カウンセリングへ！</p>
+          <a><p class="application-box__link">まずは無料カウンセリングに申し込む</ｐ></a>
         </div>
       </div>
       <div class="skill">
-        <div class="skill-title">
-          <p>開発スキルだけではない</p>
-          <p>フリーランスに必須のスキル</p>
+        <div class="diagonal-title">
+          <div class="diagonal-title__message">
+            <p class="diagonal-title__message--sub">開発スキルだけではない</p>
+            <p class="diagonal-title__message--main">フリーランスに必須のスキル</p>
+          </div>
         </div>
         <table class="skill-table">
           <tr>
             <th>01</th>
-            <td>問題解決能力</td>
-            <td class="skill-table-message">
+            <td class="skill-table__col">問題解決能力</td>
+            <td class="skill-table__message">
               フリーランスは問題点やエラーが出たとしても、教えてくれる人は誰もいません。経験したことのないエラー等も自ら解決しなければいけないため「問題解決能力」が必要となります。
             </td>
           </tr>
           <tr>
             <th>02</th>
-            <td>自己解決力</td>
-            <td class="skill-table-message">
-              ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+            <td class="skill-table__col">自己解決力</td>
+            <td class="skill-table__message">
+              フリーランスは会社員とは違い全て自分の責任です。納期までに納品できる様にスケジュールやタスク管理を自分で行わなければ、信用を失ってしまう可能性があります。
             </td>
           </tr>
           <tr>
             <th>03</th>
-            <td>案件の実績</td>
-            <td class="skill-table-message">
-              ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+            <td class="skill-table__col">案件の実績</td>
+            <td class="skill-table__message">
+              フリーランスとしてキャリアをスタートするために、スキルの証明となる実績は必要となります。プログラミングスキルがあったとしても実績が無いと、案件獲得は非常に難しくなります。
             </td>
           </tr>
         </table>
         <div class="skill-detail">
-          <div class="skill-detail-title">
+          <div class="skill-detail__title">
             <p>現役フリーランスエンジニアが<br />設計した学習プログラム</p>
           </div>
-          <div class="skill-detail-card">
-            <div class="skill-detail-card-number">01</div>
-            <div class="skill-detail-card-img">
-              <img src="test.jpg" alt="" />
+          <div class="skill-detail__card skill-card">
+            <div class="skill-card__number">01</div>
+            <div class="skill-card__img--1">
+              <div class="imagebox"></div>
             </div>
-            <div class="skill-detail-card-message">
-              <div class="main">
+            <div class="skill-card__message">
+              <div class="skill-card__message--main">
                 <p>アウトプット中心の学習で問題解決能力を養う</p>
               </div>
-              <div class="sub">
+              <div class="skill-card__message--sub">
                 <p>
                   問題解決能力を身につけるためには、多くのエラーや疑問点と向き合い解決することを経験し、問題を解決するフローや考え方を理解することが重要です。そのために多くの成果物を作成する必要があるため、COACHTECHではアウトプット中心の学習を行なっていただきます。
                 </p>
               </div>
             </div>
           </div>
-          <div class="skill-detail-card">
-            <div class="skill-detail-card-number">02</div>
-            <div class="skill-detail-card-message">
-              <div class="main">
-                <p>アウトプット中心の学習で問題解決能力を養う</p>
+          <div class="skill-detail__card skill-card">
+            <div class="skill-card__number">02</div>
+            <div class="skill-card__message">
+              <div class="skill-card__message--main">
+                <p>徹底した学習進捗の管理で自己管理力を養う</p>
               </div>
-              <div class="sub">
+              <div class="skill-card__message--sub">
                 <p>
-                  問題解決能力を身につけるためには、多くのエラーや疑問点と向き合い解決することを経験し、問題を解決するフローや考え方を理解することが重要です。そのために多くの成果物を作成する必要があるため、COACHTECHではアウトプット中心の学習を行なっていただきます。
+                  自己管理力を養うには、「適切な目標設定」と「目標達成のための計画」を繰り返し行う事が重要です。<br>COACHTECHでは、コーチと生徒様で目標を設定した上で、目標達成のために1時間単位の計画を1週間分立て、計画的に学習を進めていきます。
                 </p>
               </div>
             </div>
-            <div class="skill-detail-card-img">
-              <img src="test.jpg" alt="" />
+            <div class="skill-card__img--2">
+              <div class="imagebox"></div>
             </div>
           </div>
-          <div class="skill-detail-card">
-            <div class="skill-detail-card-number">03</div>
-            <div class="skill-detail-card-img">
-              <img src="test.jpg" alt="" />
+          <div class="skill-detail__card skill-card">
+            <div class="skill-card__number">03</div>
+            <div class="skill-card__img--3">
+              <div class="imagebox"></div>
             </div>
-            <div class="skill-detail-card-message">
-              <div class="main">
-                <p>アウトプット中心の学習で問題解決能力を養う</p>
+            <div class="skill-card__message">
+              <div class="skill-card__message--main">
+                <p>最初の実績となる案件を保証するコミュニティ</p>
               </div>
-              <div class="sub">
+              <div class="skill-card__message--sub">
                 <p>
-                  問題解決能力を身につけるためには、多くのエラーや疑問点と向き合い解決することを経験し、問題を解決するフローや考え方を理解することが重要です。そのために多くの成果物を作成する必要があるため、COACHTECHではアウトプット中心の学習を行なっていただきます。
+                  コーチテックでは、卒業後に「COACHTECH Pro」という選抜コミュニティを用意しています。<br>COACHTECH Proでは、実際の案件を開発することができ、フリーランスエンジニアとしての最初の実績を積むことができます。
                 </p>
               </div>
             </div>
@@ -185,38 +213,72 @@
         </div>
       </div>
       <div class="curriculum">
-        <div class="curriculum-title">
-          <p>学習カリキュラムの流れ</p>
-          <p>learning curriculum flow</p>
-        </div>
-        <div class="curriculum-main"></div>
-        <div class="plus">+</div>
-        <div class="support-basic">
-          <div class="support-basic-left">
-            <div class="left-button"></div>
-            <p class="left-message">共通の<br />キャリアサポート</p>
+        <div class="diagonal-title">
+          <div class="diagonal-title__message">
+            <p class="diagonal-title__message--main">学習カリキュラムの流れ</p>
+            <p class="diagonal-title__message--sub">learning curriculum flow</p>
           </div>
-          <div class="support-basic-right">
-            <div class="support-basic-right-card">
-              <div class="right-number">01</div>
-              <p>卒業後行動計画の作成</p>
+        </div>
+        <div class="curriculum-main">
+          <div class="curriculum-main__left flow-menu">
+            <div class="flow-menu__row--1">
+              <div class="flow-menu__left">1ヶ月</div>
+              <div class="flow-menu__right">Webサイト制作</div>
             </div>
-            <div class="support-basic-right-card">
-              <div class="right-number">02</div>
-              <p>ポートフォリオの添削</p>
+            <div class="flow-menu__row--2">
+              <div class="flow-menu__left">2ヶ月</div>
+              <div class="flow-menu__right">Webアプリ開発</div>
+            </div>
+            <div class="flow-menu__row--3">
+              <div class="flow-menu__left">3ヶ月</div>
+              <div class="flow-menu__right">Webアプリ開発</div>
+            </div>
+            <div class="flow-menu__row--4">
+              <div class="flow-menu__left">4ヶ月</div>
+              <div class="flow-menu__right">模擬案件＋オリジナルアプリ</div>
+            </div>
+            <div class="flow-menu__row--5">
+              <div class="flow-menu__left">5ヶ月</div>
+              <div class="flow-menu__right">模擬案件＋オリジナルアプリ</div>
+            </div>
+            <div class="flow-menu__row--6">
+              <div class="flow-menu__left">6ヶ月</div>
+              <div class="flow-menu__right">模擬案件＋オリジナルアプリ</div>
+            </div>
+          </div>
+          <div class="curriculum-main__right free-example">
+            <div class="free-example__title">フリーランスコース（6ヶ月）</div>
+            <div class="free-example__text">制作例</div>
+            <div class="free-example__img"></div>
+          </div>
+        </div>
+        <div class="curriculum__puls">+</div>
+        <div class="support-basic">
+          <div class="support-basic__left">
+            <div class="support-basic__left--icon"></div>
+            <p class="support-basic__left--text">共通の<br />キャリアサポート</p>
+          </div>
+          <div class="support-basic__right">
+            <div class="support-basic__right--card">
+              <div class="support-basic__right--number">01</div>
+              <p class="support-basic__right--message">卒業後行動計画の作成</p>
+            </div>
+            <div class="support-basic__right--card">
+              <div class="support-basic__right--number">02</div>
+              <p class="support-basic__right--message">ポートフォリオの添削</p>
             </div>
           </div>
         </div>
         <div class="support-advanced">
           <div class="advanced-card">
-            <div class="advanced-card-title"><p>フリーランス支援</p></div>
-            <div class="advanced-card-message">
+            <div class="advanced-card__title"><p>フリーランス支援</p></div>
+            <div class="advanced-card__message">
               <p>案件獲得方法の提案、案件獲得ー納品までの流れをご説明</p>
             </div>
           </div>
           <div class="advanced-card">
-            <div class="advanced-card-title"><p>就職・転職支援</p></div>
-            <div class="advanced-card-message">
+            <div class="advanced-card__title"><p>就職・転職支援</p></div>
+            <div class="advanced-card__message">
               <p>職務経歴書の添削、履歴書の添削、提携先企業による企業紹介</p>
             </div>
           </div>
@@ -224,62 +286,74 @@
       </div>
       <div class="feature">
         <div class="feature-main">
-          <div class="feature-main-title">COACHTECHの特徴</div>
-          <div class="feature-main-cards">
+          <div class="feature-main__title">COACHTECHの特徴</div>
+          <div class="feature-main__cards">
             <div class="feature-main-card">
-              <div class="feature-card-graph">
-                <div class="feature-card-graph-title">
-                  プログラミング<br />初学者
+              <div class="feature-main-card__graph">
+                <div class="feature-main-card__graph--title title-small">
+                  プログラミング<br /><span>初学者</span>
                 </div>
-                <div class="feature-card-graph-view"></div>
+                <div class="feature-main-card__graph--view">
+                  <div class="viewbox1"></div>
+                </div>
               </div>
-              <div class="feature-card-message">
-                <p>
-                  コーチテックは、未経験からでも安心の学習サポートを提供しています。実際に受講生の90％がプログラミング初学者です。
-                </p>
-                <p>2019年7月〜2020年7月の受講生データに基づく</p>
+              <div class="feature-main-card__message">
+                <div class="card-message-box">
+                  <p class="card-message-box__main">
+                    コーチテックは、未経験からでも安心の学習サポートを提供しています。実際に受講生の90％がプログラミング初学者です。
+                  </p>
+                  <p class="card-message-box__sub">2019年7月〜2020年7月の受講生データに基づく</p>
+                </div>
               </div>
             </div>
             <div class="feature-main-card">
-              <div class="feature-card-graph">
-                <div class="feature-card-graph-title">
-                  プログラミング<br />初学者
+              <div class="feature-main-card__graph">
+                <div class="feature-main-card__graph--title">
+                  学習<br />継続率
                 </div>
-                <div class="feature-card-graph-view"></div>
+                <div class="feature-main-card__graph--view">
+                  <div class="viewbox2"></div>
+                </div>
               </div>
-              <div class="feature-card-message">
-                <p>
-                  コーチテックは、未経験からでも安心の学習サポートを提供しています。実際に受講生の90％がプログラミング初学者です。
-                </p>
-                <p>2019年7月〜2020年7月の受講生データに基づく</p>
+              <div class="feature-main-card__message">
+                <div class="card-message-box">
+                  <p class="card-message-box__main">
+                    コーチテックの”挫折させない学習プログラム”は学習継続率97%と高い実績を残しています。
+                  </p>
+                  <p class="card-message-box__sub">受講生のうち途中解約せずに卒業された方の割合<br>（ただし、病気・介護等の事由での解約は除く）<br>2019年7月～2020年7月の受講生データに基づく</p>
+                </div>
               </div>
             </div>
             <div class="feature-main-card">
-              <div class="feature-card-graph">
-                <div class="feature-card-graph-title">
-                  プログラミング<br />初学者
+              <div class="feature-main-card__graph">
+                <div class="feature-main-card__graph--title">
+                  総合<br />満足度
                 </div>
-                <div class="feature-card-graph-view"></div>
+                <div class="feature-main-card__graph--view">
+                  <div class="viewbox3"></div>
+                </div>
               </div>
-              <div class="feature-card-message">
-                <p>
-                  コーチテックは、未経験からでも安心の学習サポートを提供しています。実際に受講生の90％がプログラミング初学者です。
-                </p>
-                <p>2019年7月〜2020年7月の受講生データに基づく</p>
+              <div class="feature-main-card__message">
+                <div class="card-message-box">
+                  <p class="card-message-box__main">
+                    教材、コーチ、質問サポート、キャリアサポートを含めた総合満足度が95%を誇ります。
+                  </p>
+                  <p class="card-message-box__sub">2019年7月～2020年7月の受講生データに基づく</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="feature-sub-graphs">
-          <div class="feature-sub-graph">年齢</div>
-          <div class="feature-sub-graph">目的</div>
-          <div class="feature-sub-graph">週平均<br />学習時間</div>
+          <div class="feature-sub-graphs__content--1"></div>
+          <div class="feature-sub-graphs__content--2"></div>
+          <div class="feature-sub-graphs__content--3"></div>
         </div>
       </div>
       <div class="application">
         <div class="application-box">
-          <p>「あなたに最適な学習方法」がわかる無料カウンセリングへ！</p>
-          <a><p class="application-link">まずは無料カウンセリングに申し込む</ｐ></a>
+          <p class="application-box__title">「あなたに最適な学習方法」がわかる無料カウンセリングへ！</p>
+          <a><p class="application-box__link">まずは無料カウンセリングに申し込む</ｐ></a>
         </div>
       </div>
       <div class="graduate">
@@ -294,13 +368,13 @@
           <div class="graduate-card">
             <div class="graduate-card-img"></div>
             <div class="graduate-card-message">
-              未経験から一人でサービス開発・受託を行う。1年で急成長できた秘訣とは
+              未経験からITベンチャーにエンジニアとして新卒就職！内定獲得に至った要因とは?
             </div>
           </div>
           <div class="graduate-card">
             <div class="graduate-card-img"></div>
             <div class="graduate-card-message">
-              未経験から一人でサービス開発・受託を行う。1年で急成長できた秘訣とは
+              卒業後すぐに案件獲得！2ヶ月でwebアプリ開発スキルを習得
             </div>
           </div>
         </div>
@@ -332,12 +406,7 @@
           </div>
           <div class="message-box-contents">
             <div class="message-box-contents-text">
-              <p>
-                あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
-              </p>
-              <p>
-                おおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおお
-              </p>
+              <p>弊社ではこの言葉をミッションに、社員全員がお客様の成長のために何ができるかを常に考えています。2030年にIT人材が78.9万人不足すると言われている中、プログラミングスクール業界全体として即戦力のエンジニアを育成できる仕組みはまだまだ出来上がっていません。<br>COACHTECHでは、プログラミングスクール卒のエンジニアは現場では通用しないという常識を変えるために、次世代を担う優秀なエンジニアの育成・輩出に貢献してまいります。</p>
             </div>
             <div class="message-box-contents-img"></div>
           </div>
@@ -348,8 +417,8 @@
       </div>
       <div class="application">
         <div class="application-box">
-          <p>「あなたに最適な学習方法」がわかる無料カウンセリングへ！</p>
-          <a><p class="application-link">まずは無料カウンセリングに申し込む</ｐ></a>
+          <p class="application-box__title">「あなたに最適な学習方法」がわかる無料カウンセリングへ！</p>
+          <a><p class="application-box__link">まずは無料カウンセリングに申し込む</ｐ></a>
         </div>
       </div>
       <div class="question">
