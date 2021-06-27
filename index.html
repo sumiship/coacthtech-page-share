@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/common.css">
     <title>Document</title>
   </head>
   <body>
@@ -18,6 +19,19 @@
           <a><li>無料カウンセリングはこちら</li></a>
         </ul>
       </nav>
+      <div id="menu">
+        <span id="menu__top"></span>
+        <span id="menu__middle"></span>
+        <span id="menu__bottom"></span>
+      </div>
+      <div id="drawer-nav">
+        <div id="drawer-nav__box">
+          <div class=drawer-nav__list><a>卒業生の声</a></div>
+          <div class=drawer-nav__list><a>よくある質問</a></div>
+          <div class=drawer-nav__list><a>コース・料金</a></div>
+          <a><div class=drawer-nav__list>無料カウンセリングはこちら</div></a>
+        </div>
+      </div>
     </header>
     <main>
       <div class="topview">
@@ -441,20 +455,16 @@
         </div>
       </div>
       <div class="message">
-        <div class="message-title"><p>運営の想い</p></div>
+        <div class="message__title"><p>運営の想い</p></div>
         <div class="message-box">
-          <div class="message-box-title">
-            <p>「全ての人の成長にコミットする」</p>
+          <div class="message-box__left">
+            <p class="message-box__left--big">「全ての人の成長にコミットする」</p>
+            <p class="message-box__left--small">弊社ではこの言葉をミッションに、社員全員がお客様の成長のために何ができるかを常に考えています。2030年にIT人材が78.9万人不足すると言われている中、プログラミングスクール業界全体として即戦力のエンジニアを育成できる仕組みはまだまだ出来上がっていません。<br>COACHTECHでは、プログラミングスクール卒のエンジニアは現場では通用しないという常識を変えるために、次世代を担う優秀なエンジニアの育成・輩出に貢献してまいります。</p>
           </div>
-          <div class="message-box-contents">
-            <div class="message-box-contents-text">
-              <p>弊社ではこの言葉をミッションに、社員全員がお客様の成長のために何ができるかを常に考えています。2030年にIT人材が78.9万人不足すると言われている中、プログラミングスクール業界全体として即戦力のエンジニアを育成できる仕組みはまだまだ出来上がっていません。<br>COACHTECHでは、プログラミングスクール卒のエンジニアは現場では通用しないという常識を変えるために、次世代を担う優秀なエンジニアの育成・輩出に貢献してまいります。</p>
-            </div>
-            <div class="message-box-contents-img"></div>
-          </div>
+          <div class="message-box__right">sign</div>
         </div>
-        <div class="message-charge-link">
-          コース・料金へ<span class="message-charge-arrow">＞</span>
+        <div class="message__charge--link">
+          コース・料金へ<span class="message__charge--arrow">＞</span>
         </div>
       </div>
       <div class="application">
@@ -465,39 +475,107 @@
       </div>
       <div class="question">
         <div class="question-box">
-          <div class="question-box-title">よくある質問</div>
-          <div class="question-box-questions">
-            <div class="question-box-question">
-              <div class="question-box-question-title">Q プログラミングは大変ですか</div>
-              <div class="question-box-question-answer">大変だと思います。大変だと思います。大変だと思います。大変だと思います。大変だと思います。大変だと思います。大変だと思います。大変だと思います。大変だと思います。大変だと思います。大変だと思います。大変だと思います。大変だと思います。大変だと思います。</div>
-            </div>
-            <div class="question-box-question">
-              <div class="question-box-question-title">Q プログラミングは大変ですか</div>
-            </div>
-            <div class="question-box-question">
-              <div class="question-box-question-title">Q プログラミングは大変ですか</div>
+          <div class="question-box__title title-box">
+            <div class="title-box__icon">?</div>
+            <div class="title-box__text">よくある質問</div>
+          </div>
+          <div class="question-box__content question-content">
+            <div class="question-content__logo">Q</div>
+            <div class="question-content__text">
+              プログラミングは楽しいですか
             </div>
           </div>
-          <div class="question-link">
-            詳しく見る<span class="question-arrow">＞</span>
+          <div class="question-box__content answer-content">
+              楽しいです。楽しいです。楽しいです。楽しいです。楽しいです。楽しいです。楽しいです。楽しいです。楽しいです。楽しいです。
+          </div>
+          <div class="question-box__content question-content">
+            <div class="question-content__logo">Q</div>
+            <div class="question-content__text">
+              プログラミングは楽しいですか
+            </div>
+          </div>
+          <div class="question-box__content answer-content">
+              楽しいです。楽しいです。楽しいです。楽しいです。楽しいです。楽しいです。楽しいです。楽しいです。楽しいです。楽しいです。
+          </div>
+          <div class="question-box__content question-content">
+            <div class="question-content__logo">Q</div>
+            <div class="question-content__text">
+              プログラミングは楽しいですか
+            </div>
+          </div>
+          <div class="question-box__content answer-content">
+              楽しいです。楽しいです。楽しいです。楽しいです。楽しいです。楽しいです。楽しいです。楽しいです。楽しいです。楽しいです。
+          </div>
+          <div class="question-box__content question-content">
+            <div class="question-content__logo">Q</div>
+            <div class="question-content__text">
+              プログラミングは楽しいですか
+            </div>
+          </div>
+          <div class="question-box__content answer-content">
+              楽しいです。楽しいです。楽しいです。楽しいです。楽しいです。楽しいです。楽しいです。楽しいです。楽しいです。楽しいです。
+          </div>
+          <div class="question-box__content question-content">
+            <div class="question-content__logo">Q</div>
+            <div class="question-content__text">
+              プログラミングは楽しいですか
+            </div>
+          </div>
+          <div class="question-box__content answer-content">
+              楽しいです。楽しいです。楽しいです。楽しいです。楽しいです。楽しいです。楽しいです。楽しいです。楽しいです。楽しいです。
+          </div>
+          <div class="question__link">
+            詳しく見る<span class="question__link--arrow">＞</span>
           </div>
         </div>
       </div>
-      <div class="media">
-        <div class="media-box">YAHOOO!</div>
+      <div class="news">
+        <div class="news__title">ニュース</div>
+        <div class="news__content">
+          <div class="news-content-list">
+            <div class="news-content-list__day">2021-06-22</div>
+            <div class="news-content-list__icon">ニュース</div>
+            <div class="news-content-list__text">サービス内容・料金の変更に伴うご連絡</div>
+          </div>
+          <div class="news-content-list">
+            <div class="news-content-list__day">2021-06-22</div>
+            <div class="news-content-list__icon">ニュース</div>
+            <div class="news-content-list__text">サービス内容・料金の変更に伴うご連絡</div>
+          </div>
+          <div class="news-content-list">
+            <div class="news-content-list__day">2021-06-22</div>
+            <div class="news-content-list__icon">ニュース</div>
+            <div class="news-content-list__text">サービス内容・料金の変更に伴うご連絡</div>
+          </div>
+          <div class="news-content-list">
+            <div class="news-content-list__day">2021-06-22</div>
+            <div class="news-content-list__icon">ニュース</div>
+            <div class="news-content-list__text">サービス内容・料金の変更に伴うご連絡</div>
+          </div>
+          <div class="news-content-list">
+            <div class="news-content-list__day">2021-06-22</div>
+            <div class="news-content-list__icon">ニュース</div>
+            <div class="news-content-list__text">サービス内容・料金の変更に伴うご連絡</div>
+          </div>
+          <div class="news-content-list">
+            <div class="news-content-list__day">2021-06-22</div>
+            <div class="news-content-list__icon">ニュース</div>
+            <div class="news-content-list__text">サービス内容・料金の変更に伴うご連絡</div>
+          </div>
+        </div>
       </div>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="footer-box">
-        <div class="footer-box-left">
+        <div class="footer-box__left">
           <ul>
             <li><a>コース・料金</a></li>
             <li><a>よくある質問</a></li>
             <li><a>カウンセリング申し込み</a></li>
-            <li><a>COACHTECH Lab.</a></li>
+            <li><a>COACHTECH Lab. </a></li>
           </ul>
         </div>
-        <div class="footer-box-right">
+        <div class="footer-box__right">
           <ul>
             <li><a>特定商取引法に基づく表記</a></li>
             <li><a>プライバリーポリシー</a></li>
@@ -505,7 +583,11 @@
           </ul>
         </div>
       </div>
-      <div class="copyright">Copyright 2021 coachtech.site All rights reserved</div>
+      <div class="footer__copyright">
+        Copyright 2021 coachtech.site All rights reserved
+      </div>
     </footer>
+    <script src="header.js"></script>
+    <script src="indexQuestion.js"></script>
   </body>
 </html>

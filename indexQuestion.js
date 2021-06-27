@@ -1,9 +1,9 @@
-const targets = document.getElementsByClassName("question-content__button");
+const targets = document.getElementsByClassName("question-content");
 // const contents = document.getElementsByClassName("answer-content");
 
 function toggle(i) {
   const content = document.getElementsByClassName("answer-content")[i];
-  targets[i].classList.toggle("open");
+  // targets[i].classList.toggle("open");
   content.classList.toggle("open");
 }
 
