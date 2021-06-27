@@ -26,6 +26,14 @@ a {
   height: 86px;
   background-color: rgb(255, 255, 255);
   z-index: 15;
+  &__logo {
+    background: url("../img/logo.png");
+    width: 235px;
+    padding-top: 13.6%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
   &__nav {
     font-size: 20px;
     width: 70%;
@@ -151,6 +159,14 @@ main {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        & a:nth-last-child(1) {
+          & .drawer-nav__list {
+            padding: 10px;
+            border-radius: 200px;
+            color: white;
+            background: linear-gradient(90deg, #5dbdac, #75c17f);
+          }
+        }
       }
     }
     & .in {
@@ -161,12 +177,6 @@ main {
       font-size: 20px;
       color: #8d8d8d;
       margin: 18% 0;
-      &:nth-last-child(1) {
-        padding: 10px;
-        border-radius: 200px;
-        color: white;
-        background: linear-gradient(90deg, #5dbdac, #75c17f);
-      }
     }
   }
 }
