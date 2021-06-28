@@ -228,4 +228,16 @@ main {
     border: none;
     font-size: 12px;
   }
+  .application {
+    height: 238px;
+    background: url("../img/CTA-res.png");
+    background-position: bottom;
+    background-size: cover;
+  }
+  .application-box__title {
+    font-size: 21px;
+  }
+  .application-box__link {
+    font-size: 16px;
+  }
 }
