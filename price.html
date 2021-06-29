@@ -5,19 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/price.css" />
+    <link rel="stylesheet" href="css/common.css" />
     <title>Document</title>
   </head>
   <body>
     <header class="header">
-      <div class="header__logo">COACHTECH</div>
+      <a><div class="header__logo"></div></a>
       <nav class="header__nav">
         <ul>
-          <li><a>卒業生の声</a></li>
-          <li><a>よくある質問</a></li>
-          <li><a>コース・料金</a></li>
-          <li><a>無料カウンセリングはこちら</a></li>
+          <a><li>卒業生の声</li></a>
+          <a><li>よくある質問</li></a>
+          <a><li>コース・料金</li></a>
+          <a><li>無料カウンセリングはこちら</li></a>
         </ul>
       </nav>
+      <div id="menu">
+        <span id="menu__top"></span>
+        <span id="menu__middle"></span>
+        <span id="menu__bottom"></span>
+      </div>
+      <div id="drawer-nav">
+        <div id="drawer-nav__box">
+          <a><div class="drawer-nav__list">卒業生の声</div></a>
+          <a><div class="drawer-nav__list">よくある質問</div></a>
+          <a><div class="drawer-nav__list">コース・料金</div></a>
+          <a><div class="drawer-nav__list">無料カウンセリングはこちら</div></a>
+        </div>
+      </div>
     </header>
     <main>
       <div class="price-topview">
@@ -36,57 +50,60 @@
             </p>
           </div>
           <div class="service-box__content">
-            <p class="service-box__content--main">学習効率を最大限にする</p>
+            <p class="service-box__content--main">最短でエラーを解決する</p>
             <p class="service-box__content--sub">
-              一人ひとりに合わせた学習プラン
+              質問チャットサポート
             </p>
           </div>
           <div class="service-box__content">
-            <p class="service-box__content--main">学習効率を最大限にする</p>
+            <p class="service-box__content--main">あなたを挫折させない</p>
             <p class="service-box__content--sub">
-              一人ひとりに合わせた学習プラン
+              優秀な専属コーチのサポート
             </p>
           </div>
           <div class="service-box__content">
-            <p class="service-box__content--main">学習効率を最大限にする</p>
+            <p class="service-box__content--main">忙しくても学習できる</p>
             <p class="service-box__content--sub">
-              一人ひとりに合わせた学習プラン
+              徹底した学習スケジュールの管理
             </p>
           </div>
           <div class="service-box__content">
-            <p class="service-box__content--main">学習効率を最大限にする</p>
+            <p class="service-box__content--main">内定まで徹底サポート</p>
             <p class="service-box__content--sub">
-              一人ひとりに合わせた学習プラン
+              プロのキャリアアドバイザー
             </p>
           </div>
           <div class="service-box__content">
-            <p class="service-box__content--main">学習効率を最大限にする</p>
+            <p class="service-box__content--main">モチベーションを最大化</p>
             <p class="service-box__content--sub">
-              一人ひとりに合わせた学習プラン
+              コーチングセッション
             </p>
           </div>
         </div>
       </div>
-      <div class="guarantee">
-        <div class="guarantee__circle">
-          <p>
-            あんしん<br /><span class="guarantee__circle--big">14日間</span
-            ><br />保証
-          </p>
-        </div>
-        <div class="guarantee__message">
-          <p class="guarantee__message--title">14日間の全金額返金保証付き</p>
-          <p class="guarantee__message--subtitle">
-            受講生に心から満足していただくために安心と信頼の14日間保証
-          </p>
-          <p class="guarantee__message--content">
-            万が一、ご提供するサービスにご満足いただけなかった場合は、理由を問わず全額返金することをお約束します。
-          </p>
+      <div class="guarantee-block">
+        <div class="guarantee">
+          <div class="guarantee__circle">
+            <p>
+              あんしん<br /><span class="guarantee__circle--big"><span>14</span>日間</span
+              ><br />保証
+            </p>
+          </div>
+          <div class="guarantee__message">
+            <p class="guarantee__message--title">14日間の全金額返金保証付き</p>
+            <p class="guarantee__message--subtitle">
+              受講生に心から満足していただくために安心と信頼の14日間保証
+            </p>
+            <p class="guarantee__message--content">
+              万が一、ご提供するサービスにご満足いただけなかった場合は、理由を問わず全額返金することをお約束します。
+            </p>
+          </div>
         </div>
       </div>
       <div class="freelance-top">
         <div class="freelance-top-box">
           <div class="freelance-top-box__title">フリーランスコース</div>
+          <div class="freelance-top-box__back-title">Free Lance</div>
           <div class="freelance-top-box__subtitle">こんな方へおすすめ</div>
           <div class="freelance-top-box__content">
             <div class="hole-card">
@@ -98,19 +115,19 @@
             <div class="hole-card">
               <div class="hole-card__hole"></div>
               <div class="hole-card__message">
-                フリーランスエンジニアになりたい方
+                副業で月数万円からでも稼ぎたい方
               </div>
             </div>
             <div class="hole-card">
               <div class="hole-card__hole"></div>
               <div class="hole-card__message">
-                フリーランスエンジニアになりたい方
+                実務レベルのスキルを身につけたい方
               </div>
             </div>
             <div class="hole-card">
               <div class="hole-card__hole"></div>
               <div class="hole-card__message">
-                フリーランスエンジニアになりたい方
+                独自サービスを自ら開発したい方
               </div>
             </div>
           </div>
@@ -118,7 +135,7 @@
       </div>
       <div class="freelance-detail">
         <div class="freelance-detail-card">
-          <div class="freelance-detail-card__title">STEP1</div>
+          <div class="freelance-detail-card__title--1"><div>STEP</div><div class="bigger">1</div></div>
           <div class="freelance-detail-card__content">
             <div class="freelance-content--study">
               <div class="freelance-content__title">学習内容</div>
@@ -139,15 +156,15 @@
               <div class="freelance-content__list">1ヶ月</div>
             </div>
           </div>
-          <div class="freelance-detail-card__bottom">Basicターム</div>
+          <div class="freelance-detail-card__bottom--1">Basicターム</div>
         </div>
         <div class="freelance-detail-card">
-          <div class="freelance-detail-card__title">STEP1</div>
+          <div class="freelance-detail-card__title--2"><div>STEP</div><div class="bigger">2</div></div>
           <div class="freelance-detail-card__content">
             <div class="freelance-content--study">
               <div class="freelance-content__title">学習内容</div>
               <div class="freelance-content__list">
-                インプットとアウトプットを繰り返し基礎的なプログラミングスキルを習得
+                アウトプット学習を重ね、自走力を鍛えると共に実践的なスキルの習得。
               </div>
             </div>
             <div class="freelance-content--support">
@@ -155,63 +172,68 @@
               <div class="freelance-content__list">
                 <ul>
                   <li>質問チャットサポート</li>
+                  <li>専属コーチと週次面談</li>
+                  <li>学習計画の作成</li>
                 </ul>
               </div>
             </div>
             <div class="freelance-content--term">
               <div class="freelance-content__title">学習期間</div>
-              <div class="freelance-content__list">1ヶ月</div>
+              <div class="freelance-content__list">2~3ヶ月(プランによる)</div>
             </div>
           </div>
-          <div class="freelance-detail-card__bottom">Basicターム</div>
+          <div class="freelance-detail-card__bottom--2">Standardターム</div>
         </div>
         <div class="freelance-detail-card">
-          <div class="freelance-detail-card__title">STEP1</div>
+          <div class="freelance-detail-card__title--3"><div>STEP</div><div class="bigger">3</div></div>
           <div class="freelance-detail-card__content">
             <div class="freelance-content--study">
               <div class="freelance-content__title">学習内容</div>
               <div class="freelance-content__list">
-                インプットとアウトプットを繰り返し基礎的なプログラミングスキルを習得
+                案件の流れを経験しなが、Webアプリ開発を行い実務で通用するスキルを洗練します。
               </div>
             </div>
             <div class="freelance-content--support">
               <div class="freelance-content__title">サポート内容</div>
               <div class="freelance-content__list">
                 <ul>
-                  <li>質問チャットサポート</li>
+                  <li>模擬案件開発</li>
+                  <li>専属コーチと週次面談</li>
+                  <li>コミュニティ</li>
                 </ul>
               </div>
             </div>
             <div class="freelance-content--term">
               <div class="freelance-content__title">学習期間</div>
-              <div class="freelance-content__list">1ヶ月</div>
+              <div class="freelance-content__list">2~3ヶ月(プランによる)</div>
             </div>
           </div>
-          <div class="freelance-detail-card__bottom">Basicターム</div>
+          <div class="freelance-detail-card__bottom--3">Advanceターム</div>
         </div>
         <div class="freelance-detail-card">
-          <div class="freelance-detail-card__title">STEP1</div>
+          <div class="freelance-detail-card__title--4"><div>STEP</div><div class="bigger">4</div></div>
           <div class="freelance-detail-card__content">
             <div class="freelance-content--study">
               <div class="freelance-content__title">学習内容</div>
               <div class="freelance-content__list">
-                インプットとアウトプットを繰り返し基礎的なプログqqqqqqqqqqqqqラミングスキルを習得
+                COACHTECH Proでは、フリーランスとして初の案件を保証しています。
               </div>
             </div>
             <div class="freelance-content--support">
               <div class="freelance-content__title">サポート内容</div>
               <div class="freelance-content__list">
                 <ul>
-                  <li>質問チャットサポート</li>
+                  <li>案件保証</li>
+                  <li>コミュニティ</li>
                 </ul>
               </div>
             </div>
             <div class="freelance-content--term">
               <div class="freelance-content__title">学習期間</div>
-              <div class="freelance-content__list">1ヶ月</div>
+              <div class="freelance-content__list">制限期間なし</div>
             </div>
           </div>
-          <div class="freelance-detail-card__bottom">Basicターム</div>
+          <div class="freelance-detail-card__bottom--4">COACHTECH Pro</div>
         </div>
       </div>
       <div class="charge">
@@ -248,12 +270,8 @@
       </div>
       <div class="application">
         <div class="application-box">
-          <p class="application-box__message">
-            「あなたに最適な学習方法」がわかる無料カウンセリングへ！
-          </p>
-          <a class="application-box__link"
-            >まずは無料カウンセリングに申し込む</a
-          >
+          <p class="application-box__title">「あなたに最適な学習方法」がわかる無料カウンセリングへ！</p>
+          <a><p class="application-box__link">まずは無料カウンセリングに申し込む</ｐ></a>
         </div>
       </div>
     </main>
@@ -264,6 +282,7 @@
             <li><a>コース・料金</a></li>
             <li><a>よくある質問</a></li>
             <li><a>カウンセリング申し込み</a></li>
+            <li><a>COACHTECH Lab. </a></li>
           </ul>
         </div>
         <div class="footer-box__right">
@@ -278,5 +297,6 @@
         Copyright 2021 coachtech.site All rights reserved
       </div>
     </footer>
+    <script src="header.js"></script>
   </body>
 </html>
